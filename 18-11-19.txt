@@ -1,4 +1,5 @@
- Console.WriteLine("=====Bill Generate====");
+a 
+Console.WriteLine("=====Bill Generate====");
 
             Console.Write("Enter Units:");
             int un = int.Parse(Console.ReadLine());
