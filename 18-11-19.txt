@@ -1,0 +1,72 @@
+ Console.WriteLine("=====Bill Generate====");
+
+            Console.Write("Enter Units:");
+            int un = int.Parse(Console.ReadLine());
+            int bill = 0;
+            if (un <= 100)
+            {
+                bill = bill + (un * 4);
+                Console.WriteLine("Bill:" + bill);
+            }
+            else if (un <= 300)
+            {
+                un = un - 100;
+                bill = bill + (100 * 4);
+                bill = bill + (un * 7);
+                Console.WriteLine("Bill:" + bill);
+            }
+            else
+            {
+                un = un - 300;
+                bill = bill + (100 * 4);
+                bill = bill + (200 * 7);
+                bill = bill + (un * 10);
+                Console.WriteLine("Bill:" + bill);
+            }
+// TRIANGLE
+  for(int i=5;i>=1;i--)
+            {
+                
+                for(int j=5;j>=i;j--)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine("");
+            
+}
+
+//ATM
+
+  int value = 1025;
+            int v1 = value / 1000;
+            int v2 = value % 1000;
+
+            Console.WriteLine("Notes:{0}", v1);
+            Console.WriteLine("Reaming:{0}", v2);
+
+//WHILE LOOP
+ while(value<=1026)
+            {
+                Console.WriteLine(value);
+
+                value++;
+            }
+//Do While Loop
+ do
+            {
+                Console.WriteLine(value);
+                value++;
+            } while ((value <= 1024));
+
+
+   int v = 1;
+           while (v<=10)
+            {
+                if (v %2==0)
+                {
+                    v++;
+                    continue;
+                }
+                Console.WriteLine(v);
+                v++;
+            }
